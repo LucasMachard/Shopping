@@ -35,7 +35,7 @@ module.exports = class CartItem {
     }
 
     set quantity(value) {
-        throw new Error();
+        this.#quantity= value;
     }
 
     get price() {
