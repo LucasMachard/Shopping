@@ -67,9 +67,8 @@ module.exports = class CartItem {
     get currency(){
         return this.#currency;
     }
-
     get total() {
-        return this.#quantity * this.#price;
+        return this.#price * this.#quantity;
     }
     //endregion public methods
 
